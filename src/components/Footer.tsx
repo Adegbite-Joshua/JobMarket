@@ -66,11 +66,11 @@ const Footer: React.FC = () => {
             </Link>
           </Grid>
           <Grid item>
-            <Typography color="textSecondary">
+            <p className='text-sm md:text-base' color="textSecondary">
               {'© '}
               JobMarket.com.ng {new Date().getFullYear()}.
               {' All rights reserved.'}
-            </Typography>
+            </p>
           </Grid>
         </Grid>
       </Box>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, TextField, Box, Typography, Container, TablePagination } from '@mui/material';
-import { FilterAltOutlined } from '@mui/icons-material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Box, Typography, Container, TablePagination } from '@mui/material';
+import { FilterAltOutlined, SearchOutlined } from '@mui/icons-material';
 
 const dummyData = [
     { date: '12/6/AM/01+02', name: 'Charlotte', surname: '*************', phone: '*************', salary: '₦10,000,000.00', experience: '12 months', jobType: 'Machine Repair', gender: 'Male/Female', status: 'MSME/Stud', lga: 'IKJ - Lag', employmentStatus: 'New' },
@@ -35,7 +35,15 @@ const BroadcastList: React.FC = () => {
                     Broadcast List
                 </Typography>
                 <Box display="flex" justifyContent="space-between" mb={2}>
-                    <TextField variant="outlined" className='h-10' label="Search" />
+                    <div className="relative flex items-center border w-80">
+                        <SearchOutlined className="absolute left-3 text-gray-500 text-2xl" />
+                        <input
+                            type="search"
+                            className="w-full pl-12 pr-4 py-2 text-sm border-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+                            placeholder="Search for job ppp, employment status"
+                        />
+                    </div>
+
                     <button className='border border-slate-400 text-slate-400 rounded-xl items-center flex p-1 px-3 h-auto'>
                         <FilterAltOutlined />
                         <span className='text-xl'>Filter</span>
