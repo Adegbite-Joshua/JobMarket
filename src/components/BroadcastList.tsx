@@ -36,11 +36,11 @@ const BroadcastList: React.FC = () => {
                     Broadcast List
                 </Typography>
                 <Box display="flex" justifyContent="space-between" mb={2}>
-                    <div className="relative flex items-center border w-80">
+                    <div className="relative flex items-center border w-80 bg-white">
                         <SearchOutlined className="absolute left-3 text-gray-500 text-2xl" />
                         <input
                             type="search"
-                            className="w-full pl-12 pr-4 py-2 text-sm border-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+                            className="w-full pl-12 bg-white pr-4 py-2 text-sm border-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
                             placeholder="Search for job ppp, employment status"
                         />
                     </div>
